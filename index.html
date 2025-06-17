@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khadiza 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #fff0f8);
+      overflow-x: hidden;
+      position: relative;
+      height: 100vh;
+      color: #d63384;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    img {
+      width: 320px;
+      height: auto;
+      border-radius: 30px;
+      box-shadow: 0 0 30px #ffb6c1;
+      margin-top: 2rem;
+      border: 5px solid white;
+    }
+
+    h1 {
+      font-family: 'Sacramento', cursive;
+      font-size: 4rem;
+      color: #ff69b4;
+      margin: 1rem 0 0.2rem;
+      text-shadow: 0 0 10px #ffb6c1;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      color: #ff85a2;
+      animation: fadeIn 2s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    p {
+      font-size: 1.2rem;
+      background: #fff0f5;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ffcce5;
+      display: inline-block;
+      max-width: 600px;
+      margin: 1.5rem auto;
+      color: #c2185b;
+      line-height: 1.8;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      opacity: 0.6;
+      border-radius: 50% 50% 0 0;
+      transform: rotate(-45deg);
+      animation: floatUp 8s infinite;
+    }
+
+    .heart::after,
+    .heart::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+
+    .heart::after {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::before {
+      top: 0;
+      left: 10px;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+
+    /* Twinkling stars */
+    .star {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 3s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <script>
+    for(let i = 0; i < 25; i++) {
+      let heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (4 + Math.random() * 6) + 's';
+      document.body.appendChild(heart);
+    }
+
+    // Add stars
+    for(let i = 0; i < 40; i++) {
+      let star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.animationDuration = (1 + Math.random() * 3) + 's';
+      document.body.appendChild(star);
+    }
+  </script>
+
+  <div class="container">
+    <!-- Replace the src with her image link -->
+    <img src="/photos/bebi.jpg" alt="Khadiza's Picture">
+
+    <h1>Khadiza</h1>
+    <div class="subtitle">My Rose of the Pink Sky 🌸</div>
+
+    <p>
+      Damnn... She's made of moonlight and magic,<br>
+      Pretty like a fairytale whispered in dreams.<br>
+      Her aura? Pure blossom, wrapped in Ma Shaa Allah.<br>
+      When she smiles, angels take notes.<br>
+      She doesn’t walk — she floats through hearts.<br>
+      My world is softer, warmer, cuter — just because of her 💖<br>
+      ✧･ﾟ: *✧･ﾟ:* Always & Forever *:･ﾟ✧*:･ﾟ✧
+    </p>
+  </div>
+
+</body>
+</html>
